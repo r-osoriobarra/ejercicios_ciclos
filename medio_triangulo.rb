@@ -7,10 +7,17 @@
 #****
 #*****
 
-n = 10
+n = ARGV[0].to_i
 
 n.times do |i|
-    (i+1).times do
+    i.times do
+        print "*"
+    end
+    print "\n"
+end
+
+n.times do |i|
+    (n-i).times do
         print "*"
     end
     print "\n"
